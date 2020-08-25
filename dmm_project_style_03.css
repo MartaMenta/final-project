@@ -1,0 +1,141 @@
+header {
+background-color: lightslategrey;
+padding: 30px;
+padding-bottom: 10px;
+}
+
+.headtext {
+font-family: 'Libre Baskerville', serif; 
+font-variant: small-caps;
+font-stretch: expanded;
+font-size: 40pt;
+display: flex;
+justify-content: center;
+align-items: center;
+color: whitesmoke;
+text-shadow: 2px 2px darkcyan;
+line-height: 70%;
+}
+
+#headtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    line-height: 70%;
+    }
+
+body {
+    display: flex; /* setting "display: flex" allows its children (e.g. "main" below) to use the "flex" property */
+    flex-direction: column;
+    padding-top: 10px; /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
+    min-height: 100vh; /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
+    font-family: 'Lato', sans-serif;
+    background: #f1f1f1;
+  }
+
+
+  footer {
+    display: flex; /* allows use of "justify-content" property */
+    align-items: flex-end;
+    justify-content: center; /* horizontally centers the contents (the social icons) */
+    background-color:lightslategrey;
+    height: 100px;
+    padding: 20px;
+  }
+  
+  footer a {
+    margin: 5px;
+    text-decoration: none !important;
+  }
+  
+  .social-icon {
+    display: inline-flex; /* allows use of "justify-content" and "align-items" properties */
+    width: 50px;
+    height: 50px;
+    color: lightslategrey;
+    background-color: white;
+    justify-content: center; /* horizontally centers the contents (the FontAwesome icon) */
+    align-items: center; /* vertically centers the contents (the FontAwesome icon) */
+    border-radius: 50%; /* makes it round (circle if width and height are the same) */
+  }
+  
+  .social-icon:hover {
+    color: darkcyan; /* change color when hover over the link */
+  }
+  
+  #go-top-button:hover {
+    color: darkcyan; /* change color when hover over the link */
+}
+  
+  #go-top-button {
+    color: lightslategrey;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button 20px from the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border-radius: 50%; /* makes it round (circle if width and height are the same) */
+  }
+
+
+.small_text {
+font-size: 10pt;
+}
+
+.title_text {
+  color: lightslategray;
+  text-align: start;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 70%;
+    padding-left: 40px;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: lightslategrey;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
